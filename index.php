@@ -1,14 +1,9 @@
 <?php
-print "<table style=\"border:solid;\">";
 $t = rand(-20,20);
-if ($t > 0) {
-    '<th style="color:white;background-color:green;">';
-} elseif ($t == 0)
-'<th style="color:white;background-color:yellow;">';
- else{
-    '<th style="color:white;background-color:red;">';
-}
-for ($i = -20; $i <= 42; $i++) {
-    print "<tr><td style=\"border:solid;\">$i</td><td style=\"border:solid;\"></td></tr>";
+$i = 0;
+print "<table style=\"border:solid;\">";
+$style = $t > $i ? 'width:30px;background:red' : 'width:30px;background:yellow';
+for ($t = -20; $t <= 20; $t++) {
+    print "<tr><td style=\"border:solid;\">$t</td><td style=\"border:solid;\" style=\"{$style}\"\></td></tr>";
 }
 print "</table>";
