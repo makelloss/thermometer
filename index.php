@@ -1,7 +1,7 @@
 <?php
-$i = 0;
+$t = 0;
 print "<table style=\"border:solid;\">";
-for ($t = 20; $t > -20; $t--) {
+for ($i = 20; $i > -20; $i--) {
     $style = $t > $i ? 'width:30px;background:red' : 'width:30px;background:blue';
-    print "<tr><td style=\"border:solid;\">$t</td><td style=\"{$style}\"\></td></tr>";
+    print "<tr><td style=\"border:solid;\">$i</td><td style=\"{$style}\"\></td></tr>";
 }
